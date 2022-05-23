@@ -2,8 +2,8 @@
 Saucedemo End-to-End Automation using WebdriverIO , Javascript and NodeJS
 
 ## Pre-requisite
--NodeJS v12 and above
--JRE 8 or above
+1. NodeJS v12 and above
+2. JRE 8 or above
 
 ## Quick start
 -Download the latest stable release from here or clone the git repository https://github.com/SonaliRepo/saucedemo_cucumber_automation.git 
