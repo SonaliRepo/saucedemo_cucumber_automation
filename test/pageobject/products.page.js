@@ -31,9 +31,12 @@ class productsPage{
     */  
 
     async addFirstAndLastProduct() {
+        
         const productList= $(`.inventory_list`);
-        await productList.$$(`button`)[0].click();
-        await productList.$$(`button`)[5].click();
+        const product = await productList.$$(`button`);
+        let len =await product.length;
+        await product[0].click();
+        await product[len-1].click();
 
     }
 
