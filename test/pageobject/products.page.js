@@ -32,12 +32,17 @@ class productsPage{
 
     async addFirstAndLastProduct() {
         
+         try{
         const productList= $(`.inventory_list`);
         const product = await productList.$$(`button`);
         let len =await product.length;
         await product[0].click();
         await product[len-1].click();
+        
+        }catch (err) {
 
+            throw Error(`Failure due t - [${err.name}:${err.message}]`);
+        }
     }
 
     /*
